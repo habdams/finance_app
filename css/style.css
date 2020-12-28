@@ -1,0 +1,239 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-family:'Quicksand',sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  background: rgba(236, 240, 241, 0.5);
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Corben',sans-serif;
+}
+
+.icon_general{
+  color:grey;
+}
+
+.send{
+  background:rgba(145, 61, 136, 0.2) ;
+  color: rgba(145, 61, 136, 1);
+}
+
+.exchange{
+  background:rgba(0, 177, 106, 0.2);
+  color:rgba(0, 177, 106, 1);
+}
+
+.recieved{
+  background: rgba(248, 148, 6, 0.2);
+  color:rgba(248, 148, 6, 1);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav{
+  width: 10%;
+  height: 100vh;
+  padding-top: 20px;
+  background:white;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav>img{
+  width:45px;
+  margin:0px 0px 50px 20px;
+}
+.nav_icons{
+  margin:20px;
+  color: lightgrey;
+  font-size: 2rem;
+}
+
+.main_content{
+  width: 90%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 40px;
+  background: white;
+}
+header h1{
+  margin-right:50px;
+  margin-top: 0px;
+}
+
+.detail_Tab{
+  padding: 10px 20px 0px 10px;
+  text-align: left;
+}
+.detail_Tab p{
+  /* font-size: 1.2rem; */
+  margin-bottom: 0px;
+  display: inline;
+}
+.detail_Tab h6{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding-left: 20px;
+}
+.tab_different{
+  background: rgba(123, 239, 178, 0.1);
+  border-radius: 50px;
+}
+
+
+.main_content_sub{
+  display: flex;
+  flex-direction: row;
+}
+main{
+  width: 70%;
+  margin-right: 20px;
+  background: white;
+  padding:20px;
+}
+.main_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_header>h2{
+  /* display: inline; */
+  align-self: flex-start;
+  margin:0px;
+}
+.main_header>section>input{
+  align-self: flex-end;
+  background:rgba(210, 215, 211, 0.5);
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.main_header_icons{
+  color:grey;
+  background: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  margin:0px 10px;
+}
+
+.transaction_detail_group{
+  border-bottom: lightgrey 1px solid;
+}
+.transaction_detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.transaction_detail_icons{
+  margin-right:10px;
+  padding:10px;
+  border-radius: 5px;
+}
+.date_alignment h6{
+  padding-left:55px;
+}
+
+.right_sidebar{
+  width: 25%;
+  background: white;
+  padding: 20px;
+}
+.right_sidebar>.credit_card{
+  height: 150px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  background-image: url('card.png');
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 2px 3px rgba(108, 122, 137, 0.5);
+}
+.credit_card>h5{
+  margin-bottom: 0px;
+}
+.credit_card>h3{
+  margin-top: 5px;
+}
+
+.transcation_buttons{
+  padding:10px 30px;
+  background: white;
+  border: 0px;
+}
+.transcation_buttons:hover{
+  border-bottom: mediumspringgreen 1px solid;
+}
+
+.transfer>form input,select{
+  width: 100%;
+  padding: 10px 20px;
+  border: 0px;
+  background: beige;
+  border-radius: 10px;
+
+}
+.transfer>form input+p+input{
+  width:60%;
+  float: left;
+}
+.transfer>form select{
+  width: 30%;
+  margin-left: 10px;
+  padding: 10px;
+}
+.transfer>form button{
+  background: mediumseagreen;
+  color:white;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 10px;
+  width:100%;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
