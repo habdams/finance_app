@@ -239,6 +239,13 @@ main table>thead{
   width:60%;
   float: left;
 }
+.form-paragraph-margin{
+  margin-top: 40px;
+}
+.form-paragraph-substyle{ 
+  font-size: 0.9rem;
+  color: grey;
+}
 .transfer>form select{
   width: 30%;
   margin-left: 10px;
@@ -247,7 +254,8 @@ main table>thead{
 .transfer>form button{
   background: mediumseagreen;
   color:white;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  margin-top: 40px;
   border: 0px;
   border-radius: 10px;
   width:100%;
