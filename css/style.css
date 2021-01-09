@@ -40,6 +40,9 @@ h1{
 h1,h2,h3,h4,h5,h6{
   font-family:'Corben',sans-serif;
 }
+th{
+  color: rgba(108, 122, 137, 0.5);
+}
 
 .icon_general{
   color:grey;
@@ -109,11 +112,15 @@ header h1{
 }
 
 .detail_Tab{
-  padding: 0px 20px 0px 10px;
+  padding: 0px 20px 0px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   
+}
+
+.detail-description{
+  font-weight: 600;
 }
 .detail_Tab h6{
  margin-top: -10px;
@@ -122,6 +129,7 @@ header h1{
 .tab_different{
   background: rgba(123, 160, 239, 0.1);
   border-radius: 50px;
+  padding-left: 10px;
 }
 .tab_different img{
   width: 50px;
